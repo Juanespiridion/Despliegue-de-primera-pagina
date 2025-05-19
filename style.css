@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    animation: colores 20s ease infinite;
+}
+
+.contenedor{
+    margin: 10px auto;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+}
+
+.tarjeta{
+    border: 1px solid purple;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px white;
+}
+
+.tarjeta:hover{
+    transform: scale(1.01);
+    background-color: lightgray;
+    color: navy;
+}
+
+@keyframes colores {
+    0%{background-color: rgb(119, 118, 50);}
+    25%{background-color: aqua; font-family: Arial, Helvetica, sans-serif;}
+    50%{background-color: blueviolet; font-family: fantasy;}
+    75%{background-color: lightpink; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    100%{background-color: cadetblue; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+}
